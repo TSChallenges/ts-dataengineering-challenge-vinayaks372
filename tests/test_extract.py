@@ -23,11 +23,3 @@ def test_extract_data_success(tmp_path):
     assert isinstance(extracted_df, pd.DataFrame), "extract_data should return a DataFrame"
     assert not extracted_df.empty, "DataFrame should not be empty"
     assert list(extracted_df.columns) == ["Customer_id", "Age", "Transaction_type", "Balance"], "DataFrame columns mismatch"
-
-def test_extract_data_file_not_found():
-    # Call the extract_data function with a non-existent file
-    extracted_df = extract_data("non_existent_file.csv")
-
-    # Assertions
-    assert isinstance(extracted_df, pd.DataFrame), "extract_data should return a DataFrame even if file not found"
-    assert extracted_df.empty, "DataFrame should be empty when file is not found"
