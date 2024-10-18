@@ -3,75 +3,52 @@
 An implementation of core data engineering concepts using Python and SQL, with GitHub Codespaces integration.
 
 ## Objective
-In this challenge, you are working as a Data Engineer for a retail banking company. Your task is to build an ETL (Extract, Transform, Load) pipeline that processes the bank’s transaction data. The company collects various transaction types, customer ages, and balances, and they need a system to extract this data from raw files, clean and transform it, and load it into a database for analysis.
+In this challenge, you work as a Data Engineer for a retail banking company. Your task is to build an ETL (Extract, Transform, Load) pipeline that processes the bank’s transaction data. The company collects various transaction types, customer ages, and balances, and they need a system to extract this data from raw files, clean and transform it, and load it into a database for analysis.
 
-You will be working with a dataset containing 100 rows of customer IDs, ages, transaction types, and balances, which is provided in the repository as `bank_transactions_dataset.csv`. Your task is to implement the ETL pipeline to process this data.
+You will work with a dataset containing 100 rows of customer IDs, ages, transaction types, and balances, which is provided in the repository as `bank_transactions_dataset.csv`. Your task is to implement the ETL pipeline to process this data.
 
 ---
 
 ## Getting Started
-1. **Fork this project** to create your own copy of the repository.
-2. **Use GitHub Codespaces**:
+1. Once you accept the assignment, you will be redirected to your own copy of the repository.
+2. The repo is forked, and you only need to commit the changes that you make in the Python files. 
+3. **Use GitHub Codespaces**:
    - Click on the green **Code** button in your forked repository.
    - Select **Codespaces** and choose "Create codespace on main" to open your development environment.
 
-3. The repository includes a pre-configured `python.yml` file, which automatically sets up the Python environment in Codespaces.
-   - **Ensure the Python version is correct**: Check that the `python.yml` file has the correct Python version for the project.
-     You can update the `python.yml` file if necessary:
-     ```yaml
-     - name: Set up Python
-       uses: actions/setup-python@v2
-       with:
-         python-version: '3.8'  # Adjust this version based on your project's needs
-     ```
-
-4. Once the Codespace is ready and the environment is set up, review the code in the `data_engineering/` folder to understand the structure.
-5. Implement the missing functions marked with **TODO** comments.
-6. Test your implementation by running the `main.py` file inside GitHub Codespaces.
-
----
-
-## Files to Work On
-- `data_engineering/extract.py`: Implement data extraction from the provided CSV file.
-- `data_engineering/transform.py`: Implement data transformation logic (data cleaning, feature engineering).
-- `data_engineering/load.py`: Implement loading the cleaned data into a SQLite database.
-- `main.py`: Control the ETL pipeline and test your implementation.
-
----
-
-## Requirements
-- **`extract.py`**:
-  - Implement the `extract_data` function to read the data from `bank_transactions_dataset.csv`.
-
-- **`transform.py`**:
-  - Implement the `transform_data` function to clean and transform the data (handle missing values, format changes, etc.).
-
-- **`load.py`**:
-  - Implement the `load_data` function to load the transformed data into a SQLite database.
-
-- **`main.py`**:
-  - Implement the pipeline flow (call extract, transform, and load functions).
+4. The repository includes a pre-configured `devcontainer.json` file, which automatically sets up the Python environment in Codespaces.
+5. Once the Codespace is ready and the environment is set up, review the code in the Python files to understand the structure.
+6. A `requirement.txt` file is added in the repo, which pre-installs the required libraries for the challenge (do not modify; if you do then run pip).
+7. `.devcontainer`, `tests`, `.gitignore` and `.github` are protected files and they SHOULD NOT be altered.
+8. Implement the missing functions marked with **TODO** comments.
+9. Test your implementation by running the `main.py` file inside GitHub Codespaces.
+10. Once the Codespace changes are committed, your project will be automatically submitted for review. 
 
 ---
 
 ## Steps to Follow
-1. **Fork** the repository and set up your environment using **GitHub Codespaces**.
-2. **extract.py**: Implement the logic to extract data from the `bank_transactions_dataset.csv`.
-3. **transform.py**: Implement the transformation logic (e.g., handle missing values, data normalization).
-4. **load.py**: Implement the loading logic to insert the cleaned data into a SQLite database.
-5. Run the code inside **GitHub Codespaces** to test your implementation.
+1. Accept the assignment to obtain your forked repository and set up your environment using **GitHub Codespaces**.
+2. **`extract.py`**: Implement the logic to extract data from the `bank_transactions_dataset.csv`.
+3. **`transform.py`**: Implement the transformation logic (e.g., handle missing values, data normalisation).
+4. **`load.py`**: Implement the loading logic to insert the cleaned data into a SQLite database.
+5. Run the codes inside **GitHub Codespaces** to test your implementation.
+6. After completing the coding on those three files, examine the ETL pipeline in **main.py**.
+7. Run the **`main.py`** to complete the ETL challenge; your final `SQL_database` will be created in the repo.
+8. Commit the changes using the COMMIT button (green) available in the codespace.
+
 
 ---
 
 ## Tips
-- Make sure to handle different data types properly (e.g., strings, integers, floats).
+- Make sure you handle different data types properly (e.g., strings, integers, floats).
 - Use the SQLite library in Python to interact with the database.
 - Ensure data quality checks are in place after the transformation step.
+- You can Run 'pytest' in the command line to test the python files.
 
 ---
 
 ## Submission Guidelines
-After completing the challenge, submit the link to your **forked GitHub repository** in the **LMS submission link text box**.
+After completing the challenge, commit the changes using the commit button available in the codespace. Make sure the changes have been successfully committed.
 
 ---
 
