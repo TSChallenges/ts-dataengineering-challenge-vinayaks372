@@ -28,9 +28,18 @@ You will work with a dataset containing 100 rows of customer IDs, ages, transact
 
 ## Steps to Follow
 1. Accept the assignment to obtain your forked repository and set up your environment using **GitHub Codespaces**.
-2. **`extract.py`**: Implement the logic to extract data from the `bank_transactions_dataset.csv`.
-3. **`transform.py`**: Implement the transformation logic (e.g., handle missing values, data normalisation).
-4. **`load.py`**: Implement the loading logic to insert the cleaned data into a SQLite database.
+2. Task1: Data Extraction(8 marks)
+
+      **`extract.py`**: Implement the logic to extract data from the `bank_transactions_dataset.csv`.
+  
+3.Task2: Data Transformation(20 marks)
+
+   **`transform.py`**: Implement the transformation logic (e.g., handle missing values, data normalisation).
+
+4.Task3:Data Loading (12 marks)
+    
+   **`load.py`**: Implement the loading logic to insert the cleaned data into a SQLite database.
+
 5. Run the codes inside **GitHub Codespaces** to test your implementation.
 6. After completing the coding on those three files, examine the ETL pipeline in **main.py**.
 7. Run the **`main.py`** to complete the ETL challenge; your final `SQL_database` will be created in the repo.
