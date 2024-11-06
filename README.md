@@ -28,15 +28,15 @@ You will work with a dataset containing 100 rows of customer IDs, ages, transact
 
 ## Steps to Follow
 1. Accept the assignment to obtain your forked repository and set up your environment using **GitHub Codespaces**.
-2. Task1: Data Extraction(8 marks)
+2. ### Task1: Data Extraction(8 marks)
 
-      **`extract.py`**: Implement the logic to extract data from the `bank_transactions_dataset.csv`.
+**`extract.py`**: Implement the logic to extract data from the `bank_transactions_dataset.csv`.
   
-3.Task2: Data Transformation(20 marks)
+3. ### Task2: Data Transformation(20 marks)
 
-   **`transform.py`**: Implement the transformation logic (e.g., handle missing values, data normalisation).
+ **`transform.py`**: Implement the transformation logic (e.g., handle missing values, data normalisation).
 
-4.Task3:Data Loading (12 marks)
+4. ### Task3: Data Loading (12 marks)
     
    **`load.py`**: Implement the loading logic to insert the cleaned data into a SQLite database.
 
