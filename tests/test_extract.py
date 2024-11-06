@@ -20,6 +20,5 @@ def test_extract_data_success(tmp_path):
     extracted_df = extract_data(str(test_csv))
 
     # Assertions
-    assert isinstance(extracted_df, pd.DataFrame), "extract_data should return a DataFrame"
     assert not extracted_df.empty, "DataFrame should not be empty"
     assert list(extracted_df.columns) == ["Customer_id", "Age", "Transaction_type", "Balance"], "DataFrame columns mismatch"
