@@ -28,7 +28,6 @@ def test_load_data_success(tmp_path):
     conn.close()
 
     # Assertions
-    assert not loaded_df.empty, "Loaded DataFrame should not be empty"
     assert len(loaded_df) == len(df), "Number of records loaded should match the input DataFrame"
     assert list(loaded_df.columns) == list(df.columns), "Table columns should match DataFrame columns"
 
