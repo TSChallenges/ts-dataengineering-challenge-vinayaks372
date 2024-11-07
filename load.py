@@ -30,7 +30,7 @@ def load_data(df, db_name, table_name):
                #TODO
 
         # Commit and close the connection
-              #
+              #TODO
     except sqlite3.Error as e:
         print(f"SQLite error: {e}")
    
